@@ -2,4 +2,4 @@
 
 user=$(whoami)
 sudo chown -R $user:$user .
-mvn clean compile
+mvn clean compile -Dmaven.clean.failOnError=false
